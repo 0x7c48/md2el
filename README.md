@@ -5,7 +5,7 @@ md2el program to parse markdown files and extract emacs lisp code from it.
 
 - [md2el](https://github.com/0x7c48/md2el)
 - [Why?](#why)
-- [Features:](#features)
+- [Features](#features)
 - [Req](#req)
 - [Install](#install)
 - [Usage](#usage)
@@ -20,7 +20,7 @@ That why I write code like simple markdown file with detailed descriptions,
 and after generate my emacs (*.el) files.
 
 
-## Features:
+## Features
 + Find files by exceptions
 + Parse files and exctract code from it
 
