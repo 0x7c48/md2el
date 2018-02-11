@@ -34,7 +34,7 @@ filterFiles predicate fromPath = do
 parseMarkdownFile :: String -> String -> String
 parseMarkdownFile codeLang content =
   let stringResult = parseEmacsLisp content codeLang
-      cleanItems = map (\xs -> LU.replace "\n\n" "\n" xs) stringResult
+      cleanItems = map (\xs -> LU.replace "\n\n\n" "\n" xs) stringResult
   in (intercalate "\n\n" $ cleanItems)
 
 
