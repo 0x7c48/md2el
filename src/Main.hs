@@ -41,8 +41,8 @@ parseMarkdownFile codeLang content =
 parseEmacsLisp :: String -> String -> [String]
 parseEmacsLisp [] _ = []
 parseEmacsLisp str codeLang = 
-  let tofinde = "```" ++ codeLang
-      cleanPrefix = LU.dropWhileList (\xs -> (take 13 xs) /= tofinde) str
+  let tofinde = "```" ++ codeLang ++ "\n"
+      cleanPrefix = LU.dropWhileList (\xs -> (take 14 xs) /= tofinde) str
       dropPrefix = drop 14 cleanPrefix
       getCode = LU.takeWhileList (\xs -> (take 4 xs) /= "\n```") dropPrefix
   in if null dropPrefix 
