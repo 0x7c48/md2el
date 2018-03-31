@@ -1,6 +1,9 @@
 ghci:
 	stack exec ghci src/Main.hs
 
+copy:
+	sudo cp .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/md2el/md2el /usr/local/bin/md2el
+
 build:
 	stack build
 
